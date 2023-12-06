@@ -2,12 +2,13 @@ import React from "react";
 import { IoChevronForwardSharp } from "react-icons/io5";
 import { IoChevronBackOutline } from "react-icons/io5";
 export const BasketItem = ({ toggleComplete, item, handleQuantityDecrease, handleQuantityIncrease, index }) => {
-
+//
     return (
         <div className='item-container'>
             <div className='item-name' onClick={() => toggleComplete(index)}>
-                <input type="checkbox" className="checkbox" defaultChecked={item.isSelected ? "checked" : ""}/>
-                <span style={{textDecoration: item.isSelected ? "line-through" : "none"}}>{item.itemName}</span>
+
+                <input id = {item.itemName} type="checkbox" className="checkbox" defaultChecked={item.isSelected ? "checked" : ""}/>
+                <span id = {index} style={{textDecoration: item.isSelected ? "line-through" : "none"}}>{item.itemName}</span>
 
             </div>
             <div className='quantity'>

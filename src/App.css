@@ -97,8 +97,10 @@ button{
   background-color: white;
   border-radius: 50%;
   appearance: none;
+  background-size: 25px 25px;
 } :checked {
-  background-color: red;
+    background: url("../public/checked.jpg") no-repeat ;
+    background-size: 30px 30px;
   }
 
 .item-name{

@@ -46,7 +46,13 @@ export const Basket = () => {
     };
 
     const toggleComplete = (index) => {
-        items[index].isSelected = !items[index].isSelected;
+        items[index].isSelected = !items[index].isSelected
+        if(items[index].isSelected) {
+            document.getElementById(index).style.textDecoration = "line-through";
+        } else {
+            document.getElementById(index).style.textDecoration = "none";
+        }
+
     }
 
     return (
