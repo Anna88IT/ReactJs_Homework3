@@ -7,8 +7,7 @@ export const BasketItem = ({ toggleComplete, item, handleQuantityDecrease, handl
         <div className='item-container'>
             <div className='item-name' onClick={() => toggleComplete(index)}>
                 <input type="checkbox" className="checkbox" defaultChecked={item.isSelected ? "checked" : ""}/>
-                {/*<span style={{textDecoration: item.isSelected ? "line-through" : ""}}>{item.itemName}</span>*/}
-                <span style={{color: item.isSelected ? "red" : "blue"}}>{item.itemName}</span>
+                <span style={{textDecoration: item.isSelected ? "line-through" : "none"}}>{item.itemName}</span>
 
             </div>
             <div className='quantity'>
